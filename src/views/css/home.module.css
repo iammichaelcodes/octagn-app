@@ -29,11 +29,26 @@
     text-align: center;
 }
 .mainCon > span {
-      border: 1px;
-      background-color: ;
+      display: inline-block;
+      border: 2px solid white;
+      color: #00adb5;
+      border-radius: 50px;
+      box-shadow: 5px 3px 0px 0px #00adb5;
+      padding: 0PX 30px;
+      transform: rotate(-3deg);
+      -webkit-transform: rotate(-3deg);
+      transform-origin: 0 0;
+      position: relative;
 }
 @media screen and (width <= 767px) {
     .about > div> p {
         width: 90%;
     }
+    .mainCon {
+        width:100%;
+    }
+    .about > div > img {
+        width:90%;
+    }
+
 }
