@@ -16,6 +16,9 @@
     padding-bottom: 40px;
 
 }
+.about > div > img {
+    width:90%;
+}
 .about > div> p {
     width: 70%;
     text-align: center;
@@ -43,10 +46,8 @@
       transform-origin: 0 0;
       position: relative;
 }
-.line {
-    width: 100px;
-    border: 3px solid dotted;
-    height: 20px;
+video {
+    width: 100%;
 }
 .video {
      background-color: #515151;
@@ -62,6 +63,8 @@
 .video > div > h1 {
     text-align: center;
     color: #eee;
+    font-size: 50px;
+    font-weight: 500;
 }
 .span_line {
     display: inline-block;

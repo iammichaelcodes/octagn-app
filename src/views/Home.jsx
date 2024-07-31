@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import styles from "./css/home.module.css";
-import octagn from "../assets/octagn.jpg";
+import octagn from "../assets/octagn2.jpg";
+import samplevid from "../assets/octagn.mp4";
 
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
                         <span className={styles.span_line}>BE FR</span>
                     </h1>
                     <video controls>
-                         <source src="movie.mp4" type="video/mp4"/>
+                        <source src={samplevid} type="video/mp4"/>
                    </video>
                 </div>
              </section>
