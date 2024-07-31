@@ -31,6 +31,13 @@ const Home = () => {
                    </video>
                 </div>
              </section>
+             <section className={styles.ringDiv}>
+                <div>
+                    <h1 className="roboto-medium">MUSK VS ZUCK</h1>    
+                    <p className="urbanist-medium">The MUSKVZUCK Meme is a playful and engaging cryptocurrency project centred around the "supposedly upcoming" UFC fight between Elon Musk and Mark Zuckerberg. 
+                    The aim is to create a fun and light-hearted community that promotes monumental fight! Which side are you Elon or Zuck! Bring on the $OCTAGN Imagine if Elon Retweets Us! -Well help fund the FIGHT!By the community For the Community</p>
+                </div>
+             </section>
         </Fragment>
     )
 

@@ -1,4 +1,4 @@
-.about, .video {
+.about, .video{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,19 +12,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 15px;
+    padding: 20px 15px;
     padding-bottom: 40px;
 
 }
 .about > div > img {
-    width:90%;
+    width:50%;
+    height: 400px;
 }
 .about > div> p {
     width: 70%;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: white;
 }
 .mainCon{
@@ -70,11 +71,43 @@ video {
     display: inline-block;
     margin-left: 10px;
 }
+.ringDiv {
+    display: flex;
+    width: 100%;
+    background-image: url("../../assets/fight.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px 0 0;
+}
+.ringDiv > div {
+    width: var(--developers--width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    padding-bottom: 40px;
+}
+
+.ringDiv > div> h1 {
+    color: white;
+    text-align: center;
+}
+.ringDiv > div> p {
+    color: white;
+    text-align: center;
+}
 @media screen and (width <= 767px) {
     .about > div> p {
         width: 100%;
         max-width: fit-content;
         font-size: 18px;
+    }
+    .ringDiv > div> p {
+        width: 100%;
+        margin-bottom:none;
     }
     .mainCon {
         width:100%;
@@ -84,6 +117,7 @@ video {
     }
     .about > div > img {
         width:90%;
+        height: auto;
     }
     .video > div {
         padding-top: 5px;
@@ -92,6 +126,9 @@ video {
         font-size: 18px;
         width: 100%;
         font-weight: 600;
+    }
+    .video > div > h1 {
+        width: 90%;
     }
 
 
