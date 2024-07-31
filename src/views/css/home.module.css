@@ -44,11 +44,12 @@
 @media screen and (width <= 767px) {
     .about > div> p {
         width: 90%;
-        font-size: 15px;
+        font-size: 20px;
     }
     .mainCon {
-        width:100%;
-        font-size: 25px;
+        max-width:100%;
+        font-size: 20px;
+        font-weight: bold;
     }
     .about > div > img {
         width:90%;
