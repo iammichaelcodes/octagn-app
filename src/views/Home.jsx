@@ -15,9 +15,14 @@ const Home = () => {
                     <p className="urbanist-medium">
                     Whoever WINS will be hailed as the greatest Tech baron that ever lived! Bring on $OCTAGN, the meme coin that powers this up-and-coming fight. Community Driven token with a fun play on the "supposedly upcoming" UFC fight between Elon Musk and Mark Zuckerberg! 
                     </p>
-                    <img src={octagn} />
+                       <img src={octagn} />
+                       <span className={styles.line}></span>
                 </div>
+             </section>
+             <section className={styles.video}>
+                <div>
                     
+                </div>
              </section>
         </Fragment>
     )
