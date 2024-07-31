@@ -21,7 +21,13 @@ const Home = () => {
              </section>
              <section className={styles.video}>
                 <div>
-                    
+                    <h1 className="urbanist-medium">
+                        WHAT ABOUT OCTAGN?
+                        <span className={styles.span_line}>BE FR</span>
+                    </h1>
+                    <video controls>
+                         <source src="movie.mp4" type="video/mp4"/>
+                   </video>
                 </div>
              </section>
         </Fragment>
