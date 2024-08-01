@@ -18,7 +18,7 @@
 }
 .about > div > img {
     width:50%;
-    height: 400px;
+    height: 350px;
 }
 .about > div> p {
     width: 70%;
@@ -48,7 +48,8 @@
       position: relative;
 }
 video {
-    width: 100%;
+    width: 90%;
+    height: 100%;
 }
 .video {
      background-color: #515151;
@@ -74,31 +75,56 @@ video {
 .ringDiv {
     display: flex;
     width: 100%;
-    background-image: url("../../assets/fight.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
     text-align: center;
     padding: 30px 0 0;
 }
 .ringDiv > div {
     width: var(--developers--width);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    padding-top:2%;
+    padding-left:5%;
+    gap:100px;
+    justify-content:center;
     align-items: center;
-    padding: 10px 10px;
-    padding-bottom: 40px;
+    padding-right:6%;
+    padding-bottom: 20px;
 }
 
-.ringDiv > div> h1 {
-    color: white;
-    text-align: center;
+.ringDiv>div >  img {
+    width: 500px;
+    margin-top: 40px;
 }
-.ringDiv > div> p {
-    color: white;
-    text-align: center;
+.ringDiv > div> div > h1 {
+    font-size:35px;
+    font-weight: bold;
 }
+.ringDiv > div > div > p {
+    font-weight: 400;
+    font-size: 15px;
+    max-width: 500px;
+    line-height: 1.6;
+    color: #000000;
+}
+.bgOverlay {
+    display: none;  
+}
+
+@media screen and (max-width:990px) {
+    .ringDiv>  div {
+          flex-direction: column-reverse;
+          width: fit-content;
+          gap: 50px;
+          justify-content: center;
+    }
+    .ringDiv > div> img {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .firstSectionCon > div >  div > h1 {
+       width: 90%;
+    }
+}         
 @media screen and (width <= 767px) {
     .about > div> p {
         width: 100%;
@@ -127,9 +153,45 @@ video {
         width: 100%;
         font-weight: 600;
     }
+    .img_div {
+        display: none;
+    }
     .video > div > h1 {
         width: 90%;
     }
-
-
+    .ringDiv {
+        display: flex;
+        width: 100%;
+        background-image: url("../../assets/fight.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        text-align: center;
+        padding: 0px !important;
+    }
+    .ringDiv > div {
+        position: relative;
+    }
+    .ringDiv > div>div {
+        position: relative;
+        z-index: 1;
+    }
+    .ringDiv > div>div>  p {
+        color: white;
+    }
+    .ringDiv > div>div> h1 {
+        color: white;
+        margin-bottom:10px;
+        margin-top: 10px;
+    }
+    .bgOverlay {
+        width: 100%;
+        display: block;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
 }

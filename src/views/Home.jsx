@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import styles from "./css/home.module.css";
 import octagn from "../assets/octagn2.jpg";
 import samplevid from "../assets/octagn.mp4";
+import ring from "../assets/fight.jpg";
 
 
 const Home = () => {
@@ -26,17 +27,25 @@ const Home = () => {
                         WHAT ABOUT OCTAGN?
                         <span className={styles.span_line}>BE FR</span>
                     </h1>
-                    <video controls>
+                    <video controls autoplay muted>
                         <source src={samplevid} type="video/mp4"/>
                    </video>
                 </div>
              </section>
              <section className={styles.ringDiv}>
                 <div>
-                    <h1 className="roboto-medium">MUSK VS ZUCK</h1>    
-                    <p className="urbanist-medium">The MUSKVZUCK Meme is a playful and engaging cryptocurrency project centred around the "supposedly upcoming" UFC fight between Elon Musk and Mark Zuckerberg. 
+                    <img  src={ring} className={styles.img_div}/>
+                     <span className={styles.bgOverlay}></span>
+                    <div>
+                   
+                    <h1 className="urbanist-medium">MUSK VS ZUCK</h1>    
+                    <p className="roboto-medium">The MUSKVZUCK Meme is a playful and engaging cryptocurrency project centred around the "supposedly upcoming" UFC fight between Elon Musk and Mark Zuckerberg. 
                     The aim is to create a fun and light-hearted community that promotes monumental fight! Which side are you Elon or Zuck! Bring on the $OCTAGN Imagine if Elon Retweets Us! -Well help fund the FIGHT!By the community For the Community</p>
+                    </div>
                 </div>
+             </section>
+             <section>
+                   
              </section>
         </Fragment>
     )
