@@ -1,4 +1,4 @@
-.about, .video{
+.about, .video, .Tokens{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,6 +109,35 @@ video {
 .bgOverlay {
     display: none;  
 }
+.Tokens > div {
+    width: var(--developers--width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    padding-bottom: 40px;
+    gap: 10px;
+}
+.CA {
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+.Tokens > div > h1 {
+    font-size: 50px;
+    color: white;
+}
+.details {
+    display: flex;
+    flex-direction: row;
+}
 
 @media screen and (max-width:990px) {
     .ringDiv>  div {
@@ -122,7 +151,7 @@ video {
         margin-top: 0px;
     }
     .firstSectionCon > div >  div > h1 {
-       width: 90%;
+       width: 90%; 
     }
 }         
 @media screen and (width <= 767px) {
@@ -152,13 +181,12 @@ video {
         font-size: 18px;
         width: 100%;
         font-weight: 600;
+        width: 90%;
     }
     .img_div {
         display: none;
     }
-    .video > div > h1 {
-        width: 90%;
-    }
+    
     .ringDiv {
         display: flex;
         width: 100%;
@@ -192,6 +220,24 @@ video {
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .Tokens > div {
+        padding-top: 5px;
+    }
+    .Tokens > div > h1 {
+        width: 90%;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    .CA {
+        width: 90%;
+    }
+    .firstspan {
+        justify-content: flex-start;
+    }
+    .firstspan > span {
+        font-size: 15px;
     }
     
 }

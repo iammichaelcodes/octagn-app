@@ -37,15 +37,22 @@ const Home = () => {
                     <img  src={ring} className={styles.img_div}/>
                      <span className={styles.bgOverlay}></span>
                     <div>
-                   
                     <h1 className="urbanist-medium">MUSK VS ZUCK</h1>    
                     <p className="roboto-medium">The MUSKVZUCK Meme is a playful and engaging cryptocurrency project centred around the "supposedly upcoming" UFC fight between Elon Musk and Mark Zuckerberg. 
                     The aim is to create a fun and light-hearted community that promotes monumental fight! Which side are you Elon or Zuck! Bring on the $OCTAGN Imagine if Elon Retweets Us! -Well help fund the FIGHT!By the community For the Community</p>
                     </div>
                 </div>
              </section>
-             <section>
-                   
+             <section className={styles.Tokens}>
+                   <div>
+                       <h1 className="urbanist-bold">Tokenomics</h1>
+                       <div className={`${styles.CA} ${styles.firstspan}`}><span>CA: CQTYTBfCy5ejn2Vh9j3bWXnuU5qVsLnSgGcEK4Dapump</span></div>
+                       <div className={styles.CA}><span>Symbol</span> <span className="roboto-medium">$OCTAGN</span></div>
+                        <div className={styles.CA}><span>Total Supply</span> <span>1,000,000,000 MAX</span></div>
+                            
+                        <div className={styles.CA}><span>Buy/sell tax</span> <span>0%</span></div>
+                        <div className={styles.CA}><span>Liquidity pool</span><span>burn</span></div>
+                  </div>
              </section>
         </Fragment>
     )
