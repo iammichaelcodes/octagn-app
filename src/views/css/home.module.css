@@ -118,9 +118,11 @@ video {
     padding: 10px 15px;
     padding-bottom: 40px;
     gap: 10px;
+    width:100%;
 }
+
 .CA {
-    width: 70%;
+    
     border: 2px solid white;
     border-radius: 30px;
     padding: 5px 10px;
@@ -129,6 +131,7 @@ video {
     align-items: center;
     color: white;
     justify-content: space-between;
+    width:min(500px,60%);
 }
 .Tokens > div > h1 {
     font-size: 50px;
@@ -137,6 +140,21 @@ video {
 .details {
     display: flex;
     flex-direction: row;
+}
+.firstspan {
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: white;
+    width:min(500px,60%)
+}
+.firstspan > span{
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media screen and (max-width:990px) {
@@ -234,10 +252,24 @@ video {
         width: 90%;
     }
     .firstspan {
-        justify-content: flex-start;
+        width: 90%;
     }
     .firstspan > span {
         font-size: 15px;
+    }
+    
+}
+@media screen and (width <= 440px) {
+    .CA {
+        width:90%;
+    }
+    .firstspan {
+        width: 90%;
+    }
+    .firstspan > span {
+        display: inline-block;
+        font-size: 15px;
+        overflow-x: hidden;
     }
     
 }

@@ -46,12 +46,13 @@ const Home = () => {
              <section className={styles.Tokens}>
                    <div>
                        <h1 className="urbanist-bold">Tokenomics</h1>
-                       <div className={`${styles.CA} ${styles.firstspan}`}><span>CA: CQTYTBfCy5ejn2Vh9j3bWXnuU5qVsLnSgGcEK4Dapump</span></div>
-                       <div className={styles.CA}><span>Symbol</span> <span className="roboto-medium">$OCTAGN</span></div>
-                        <div className={styles.CA}><span>Total Supply</span> <span>1,000,000,000 MAX</span></div>
+                       
+                     <div className={styles.firstspan}><span className="roboto-medium">CA: CQTYTBfCy5ejn2Vh9j3bWXnuU5qVsLnSgGcEK4Dapump</span></div>
+                    <div className={styles.CA}><span className="roboto-medium">Symbol</span> <span className="roboto-medium">$OCTAGN</span></div>
+                        <div className={styles.CA}><span className="roboto-medium" >Total Supply</span> <span>1,000,000,000 MAX</span></div>
                             
-                        <div className={styles.CA}><span>Buy/sell tax</span> <span>0%</span></div>
-                        <div className={styles.CA}><span>Liquidity pool</span><span>burn</span></div>
+                        <div className={styles.CA}> <span className="roboto-medium">Buy/sell tax</span> <span>0%</span></div>
+                        <div className={styles.CA}><span className="roboto-medium">Liquidity pool</span><span>burn</span></div>
                   </div>
              </section>
         </Fragment>
